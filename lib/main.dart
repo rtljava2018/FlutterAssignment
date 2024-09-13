@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tcslocator/src/service/service_locator.dart';
 import 'package:tcslocator/src/view/home.dart';
 
 void main() {
-  setupLocator();
   runApp(const MyApp());
 }
 
@@ -14,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'Tcs Locator',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),

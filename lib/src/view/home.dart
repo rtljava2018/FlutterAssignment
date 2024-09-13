@@ -46,8 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 80,
-        backgroundColor: Colors.black54,
-        title: Text(widget.title,style:const TextStyle(color: Colors.white)),
+        backgroundColor: Colors.indigo,
+        title: Text(widget.title,style:const TextStyle(color: Colors.white,fontSize: 25.0, fontWeight: FontWeight.bold )),
         actions: const [
           Image(
             height: 150,
@@ -110,11 +110,11 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const Expanded(
+                  /*const Expanded(
                     child: Text(
-                      'How your appointment works',
+                      '',
                     ),
-                  ),
+                  ),*/
                   GestureDetector(
                     onTap: () {
                       Navigator.pop(context);
