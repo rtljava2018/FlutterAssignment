@@ -1,6 +1,13 @@
-# tcslocator
+# Assignment
 
 Assignment project to display list of tcs office
+Dependency added 
+cupertino_icons: ^1.0.8
+http: ^1.2.2
+flutter_map: ^7.0.2
+latlong2: ^0.9.1
+url_launcher: ^6.3.0
+get_it: ^7.7.0
 
 ## Getting Started
 
