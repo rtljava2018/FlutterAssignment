@@ -59,7 +59,7 @@ class TcsLocatorDetails extends StatefulWidget {
                   "${widget.items.area}- ${widget.items.geo}.", "Location",
                   Icons.location_city),
               buildOfficePhoneDisplay(
-                  widget.items.phone.toString(), "Phone", Icons.phone),
+                  widget.items!.phone!.toString(), "Phone", Icons.phone),
               buildOfficeEmailDisplay(
                   widget.items.email.toString(), "Email", Icons.email),
               buildOfficeMapInfo(widget.items.address.toString(), "Address",
@@ -76,8 +76,7 @@ class TcsLocatorDetails extends StatefulWidget {
       );
     }
 
-    buildOfficePhoneDisplay(String phone, String title, IconData icon) {
-      Padding(
+    buildOfficePhoneDisplay(String phone, String title, IconData icon) => Padding(
           padding: const EdgeInsets.fromLTRB(16, 10, 16, 5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,7 +121,7 @@ class TcsLocatorDetails extends StatefulWidget {
                   ]))
             ],
           ));
-    }
+
 
     // Widget builds the display item with the proper formatting to display the user's info
     Widget buildOfficeInfoDisplay(String getValue, String title,
@@ -238,7 +237,7 @@ class TcsLocatorDetails extends StatefulWidget {
       }
     }
 
-    buildOfficeEmailDisplay(String email, String title, IconData icon) {
+    buildOfficeEmailDisplay(String email, String title, IconData icon) =>
       Padding(
           padding: const EdgeInsets.fromLTRB(16, 10, 16, 5),
           child: Column(
@@ -299,7 +298,7 @@ class TcsLocatorDetails extends StatefulWidget {
                   ]))
             ],
           ));
-    }
+
 
 
   }
